@@ -9,7 +9,7 @@ $sql = "SELECT * FROM usuarios WHERE email = '$email'";
 
 $resultado = mysqli_query($conexao, $sql);
 
-$resultado = mysqli_fetch_assoc($resultado);
+$usuario = mysqli_fetch_assoc($resultado);
 
 if ($usuario && password_verify($senha, $usuario['senha'])) {
 

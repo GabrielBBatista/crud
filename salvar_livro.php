@@ -8,7 +8,7 @@
 include("verificar_sessao.php");
 
 //incluir a conexao com o banco de dados (MySQL)
-include("conaxao.php");
+include("conexao.php");
 
 // recebe os ddos enviados pelo formulário via POST
 $titulo = $_POST['titulo'];

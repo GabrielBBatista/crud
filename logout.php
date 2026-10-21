@@ -8,19 +8,19 @@
 session_start();
 
 //limpa todas as variaveis da sessão (nome, etc...)
-$_SESSION = array ();
+$_SESSION = array();
 
 // Remove o cookies de aessão do navegador (se existir)
 if (ini_get("session.use_cookies")) {
     $params = session_get_cookie_params();
     setcookie(
-    session_name(),
-    '',
-    time() - 4200,
-    $params["path"],
-    $params["domin"],
-    $params["secure"],
-    $params["httponly"]
+        session_name(),
+        '',
+        time() - 4200,
+        $params["path"],
+        $params["domin"],
+        $params["secure"],
+        $params["httponly"]
     );
 }
 
